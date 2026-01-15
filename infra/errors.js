@@ -11,7 +11,7 @@ export class InternalServerError extends Error {
 
   toJSON() {
     return {
-      error: this.name,
+      name: this.name,
       message: this.message,
       action: this.action,
       status_code: this.statusCode,
